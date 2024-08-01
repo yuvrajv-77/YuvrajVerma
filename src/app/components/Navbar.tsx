@@ -40,7 +40,7 @@ function Navbar() {
                 <Link href={"#techstack"} className='text-lg'>Skills</Link>
             </li>
             <li className='px-4 py-3 hover:rounded-lg hover:bg-zinc-800'>
-                <Link href={""} className='text-lg  '>Projects</Link>
+                <Link href={"#projects"} className='text-lg  '>Projects</Link>
             </li>
         </ul>
     )
