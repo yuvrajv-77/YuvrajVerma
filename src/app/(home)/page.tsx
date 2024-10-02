@@ -8,7 +8,7 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <>
+    
       <div className="relative">
         <Navbar />
         <Hero />
@@ -17,9 +17,6 @@ export default function Home() {
         <Projects/>
         <ContactForm/>
       </div>
-
-
-    </>
 
   );
 }

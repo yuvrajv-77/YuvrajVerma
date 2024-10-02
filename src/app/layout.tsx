@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({ weight: ['400','500','600','700','800','900'] ,subsets: ['latin'],});
+const poppins = Outfit({ weight: ['400','500','600','700','800','900'] ,subsets: ['latin'],});
 
 export const metadata: Metadata = {
   title: "Yuvraj Verma",

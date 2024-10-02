@@ -9,21 +9,21 @@ import Link from "next/link";
 
 export function Hero() {
     const words = [
-        {
-            text: "Hello,",
-            className: "text-white text-2xl md:text-4xl",
-        },
+        // {
+        //     text: "Hello,",
+        //     className: "text-white text-3xl md:text-6xl",
+        // },
         {
             text: "I'm",
-            className: "text-white text-2xl md:text-4xl",
+            className: "text-white text-4xl md:text-6xl",
         },
         {
             text: "Yuvraj Verma",
-            className: "text-blue-500 dark:text-blue-500 text-2xl md:text-4xl",
+            className: "text-blue-400 dark:text-blue-500 text-4xl md:text-6xl",
         },
     ]
     return (
-        <HeroHighlight className="" id="home" >
+        <HeroHighlight id="home" >
             <motion.div
                 initial={{
                     opacity: 0,
@@ -37,24 +37,29 @@ export function Hero() {
                     duration: 1,
                     ease: [0.4, 0.0, 0.2, 1],
                 }}
-                className=" text-2xl space-y-6 px-4 md:text-4xl lg:text-5xl font-bold text-white max-w-4xl leading-relaxed lg:leading-loose text-center mx-auto "
+                className=" text-2xl space-y-6 px-4 md:text-4xl lg:text-4xl font-bold text-white max-w-4xl leading-loose lg:leading-loose text-center mx-auto "
             >
-                <div className="flex flex-col items-center justify-center -mb-5">
+
+                <span className="flex flex-wrap items-center justify-center  -mb-6">
+                    <span className="text-white text-3xl md:text-6xl">Hello,&nbsp;</span>
                     <TypewriterEffectSmooth words={words} />
-                </div>
-                An Energetic and Passionate{" "}
-                <Highlight className="text-black dark:text-white">
+                </span>
+                An Energetic and Passionate<br />
+                <Highlight className="text-black py-2 px-3 rounded-3xl ">
                     Frontend Web Developer.
                 </Highlight>
-                <p className="text-sm md:text-lg tracking-wide">I specialize in crafting Web3 and AI digital products that prioritize user-centric design</p>
+                <p className="text-sm md:text-lg font-normal lg:font-semibold tracking-wide">I specialize in crafting Web3 and AI digital products that prioritize user-centric design</p>
 
                 <div className="flex items-center justify-center gap-5 ">
-                    <HoverBorderGradient
-                        containerClassName="rounded-[1.75rem]"
-                        as='button'
-                        className="text-sm bg-black border rounded-[28px] px-6 py-5">
-                        Download CV
-                    </HoverBorderGradient>
+                    
+                        <HoverBorderGradient
+                            containerClassName="rounded-[1.75rem]"
+                            as='button'
+                            onClick={()=> window.open('/cv.pdf', '_blank')}
+                            className="text-sm bg-black border rounded-[28px] px-6 py-5">
+                            Download CV
+                        </HoverBorderGradient>
+                    
 
                     <Link href='#contactme'>
                         <Button
