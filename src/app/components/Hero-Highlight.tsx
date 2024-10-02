@@ -55,7 +55,7 @@ export function Hero() {
                         <HoverBorderGradient
                             containerClassName="rounded-[1.75rem]"
                             as='button'
-                            onClick={()=> window.open('/cv.pdf', '_blank')}
+                            onClick={()=> window.open('https://drive.google.com/file/d/1lhtPFLoAV4_souN6xcU-xQc0jQafsmmb/view?usp=drive_link', '_blank')}
                             className="text-sm bg-black border rounded-[28px] px-6 py-5">
                             Download CV
                         </HoverBorderGradient>
